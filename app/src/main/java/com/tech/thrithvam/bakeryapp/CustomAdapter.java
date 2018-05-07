@@ -72,6 +72,7 @@ public class CustomAdapter extends BaseAdapter {
         CardView productDetail;
         //Cart-------------------------------
         TextView productNo,productPrice,productType,quantity;
+
         ImageView productImg,cancelItem;
     }
 
