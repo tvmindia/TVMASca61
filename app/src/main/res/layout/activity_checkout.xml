@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tech.thrithvam.bakeryapp.Checkout"
+    android:background="@drawable/bg"
+    android:animateLayoutChanges="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        app:cardCornerRadius="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Delivery Address"
+                android:id="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/primary_text"
+                android:layout_margin="5dp"/>
+            <RadioGroup
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:id="@+id/deliveryAddress"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kalesh Kumar\nSreevalsam House\nPoonkunnam\nThrissur\nKerala"
+                    android:id="@+id/defaultAddress"
+                    android:checked="true"
+                    android:textColor="@color/primary_text"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choose another address"
+                    android:id="@+id/chooseAddress" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:padding="5dp"
+                        android:ems="10"
+                        android:id="@+id/addressinput"
+                        android:gravity="top|start"
+                        android:background="@drawable/boarder"
+                        android:scrollbars="vertical"
+                        android:maxLines="5"
+                        android:minLines="3"
+                        android:maxLength="200"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="right"
+                        android:enabled="false"/>
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accent"
+                android:text="@string/request_delivery_date_label"
+                android:layout_below="@+id/deliveryAddress"
+                android:id="@+id/requestDeliveryDate"
+                android:layout_margin="5dp"
+                android:paddingLeft="32dp"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/close"
+                android:id="@+id/cancel_date"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/deliveryAddress"
+                android:layout_alignBottom="@+id/requestDeliveryDate"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accent"
+                android:text="@string/request_delivery_time_label"
+                android:layout_below="@+id/requestDeliveryDate"
+                android:id="@+id/requestDeliveryTime"
+                android:layout_margin="5dp"
+                android:paddingLeft="32dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/close"
+                android:id="@+id/cancel_time"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/deliveryAddress"
+                android:layout_alignBottom="@+id/requestDeliveryTime"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        app:cardCornerRadius="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Payment Method"
+                android:id="@+id/textView5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/primary_text"
+                android:layout_margin="5dp"/>
+            <RadioGroup
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:id="@+id/paymentMethod"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash On Delivery"
+                    android:id="@+id/cod"
+                    android:checked="true"
+                    android:textColor="@color/primary_text"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Net Banking"
+                    android:id="@+id/netBanking"
+                    android:textColor="@color/secondary_text"
+                    android:enabled="false"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Debit Card"
+                    android:id="@+id/debitCard"
+                    android:textColor="@color/secondary_text"
+                    android:enabled="false"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card"
+                    android:id="@+id/creditCard"
+                    android:textColor="@color/secondary_text"
+                    android:enabled="false"/>
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Place Order"
+                android:id="@+id/checkout"
+                android:padding="10dp"
+                android:background="@drawable/button"
+                android:textColor="@android:color/white"
+                android:layout_below="@id/paymentMethod"
+                android:layout_alignParentRight="true"
+                android:onClick="placeOrder"/>
+            </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

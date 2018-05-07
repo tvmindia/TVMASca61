@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tech.thrithvam.bakeryapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+ <supports-screens
+     android:largeScreens="true"
+     android:normalScreens="true"
+     android:smallScreens="true"
+     android:xlargeScreens="true"/>
+
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".User"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ItemDetails"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ImageViewer"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".BoutiqueDetails"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".OwnerAndDesigner"
+            android:configChanges="orientation|screenSize" />
+
+        <service
+            android:name=".Services"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".GridOfProducts"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".OrderStatus"
+            android:configChanges="orientation|screenSize"
+            android:label="My Orders " />
+        <activity
+            android:name=".OrderProductList"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ProductReviews"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Chat"
+            android:configChanges="orientation|screenSize"
+            android:label="Chat with us" />
+        <activity
+            android:name=".Cart"
+            android:configChanges="orientation|screenSize"
+            android:label="Your Cart" />
+        <activity
+            android:name=".Checkout"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".NetworkError"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ItemDetailsWithCartBuy"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".EnquiryItem"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EnquiryConfirm"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EnquiryFailed"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

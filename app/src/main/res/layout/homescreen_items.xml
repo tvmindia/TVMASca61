@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/itemsLoading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            app:indicator="BallTrianglePath"
+            app:indicator_color="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/gridImg"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"/>
+
+
+        <TextView
+            android:id="@+id/gridTxt"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:background="@color/labelBackground"
+            android:layout_alignBottom="@+id/gridImg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/offer"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/offerlabel"
+            android:scaleType="fitStart"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

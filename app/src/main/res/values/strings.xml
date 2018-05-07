@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Santhi Plastics</string>
+    <string name="add_fav_msg">Added to favorites…</string>
+    <string name="remove_fav_msg">Removed from favorites…</string>
+    <string name="favorite_count">☆ %1$d people favorites it ☆</string>
+    <string name="favorite_count_0">☆ Be the first one to favorite it ☆</string>
+    <string name="product_no">Product No: %1$d</string>
+    <string name="share_image">Preparing high quality image to share…</string>
+    <string name="similar_products">Similar products in %1$s</string>
+    <string name="related_products">Explore your tastes</string>
+    <string name="email">E-mail</string>
+    <string name="email_error_msg">Enter a valid e-mail</string>
+    <string name="login_error_msg">Please enter your e-mail and password</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_valid_information">Enter Valid Information</string>
+    <string name="please_login">Please Login</string>
+    <string name="user_name">Name</string>
+    <string name="login">Log in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="logout">Log out</string>
+    <string name="mob_no">Mobile Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">Date of Birth</string>
+    <string name="anniversary">Anniversary</string>
+    <string name="wait">Please wait</string>
+    <string name="submiten">ENQUIRY SENDED TO COMPANY</string>
+    <!--<string name="url" translatable="false">http://tiquesinn.com/</string>-->
+    <string name="url" translatable="false">http://192.168.1.111:7172/</string>
+    <!--<string name="url" translatable="false">http://localhost:16801/</string>-->
+
+    <!--<string name="url" translatable="false">http://jdadmin-001-site2.itempurl.com/</string>-->
+    <!--<string name="url" translatable="false">http://192.168.1.107:222/</string>-->
+    <!--<string name="url" translatable="false">http://jdadmin-001-site3.itempurl.com/</string>-->
+    <string name="ok_button">OK</string>
+    <string name="network_off_alert">Please turn on internet</string>
+    <string name="since">Since : %1$s</string>
+    <string name="mob_no_error">Enter valid mobile number</string>
+    <string name="name_error">Enter a valid name</string>
+    <string name="email_error">Enter valid e-mail</string>
+    <string name="gender_error_msg">Please select gender</string>
+    <string name="enter_otp">Please enter the four digit number you got through sms</string>
+    <string name="rs">₹ : %1$s</string>
+    <string name="activate_account_q">Your account is Locked. Contact boutique.</string>
+    <string name="my_favorites">✩\tMy Favorites</string>
+    <string name="exit_q">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Proceed">Proceed</string>
+    <string name="designer_name">Designer : %1$s</string>
+    <string name="share_text">Share the app to get points. Enter your loyalty card number while their registration to get points.</string>
+    <string name="share_text_detail">https://play.google.com/store/apps/details?id=com.android.example&#13; Checkout this app and use %1$s referral number while registration. You will get loyalty points which can be used to redeem on purchase at %2$s.</string>
+    <string name="share_text_sub">See this app of %1$s for new styles</string>
+    <string name="referral_loyalty">Referral Loyalty Card Number (Optional)</string>
+    <string name="no_items">No items to display</string>
+    <string name="no_reviews">Be the first one to review this product</string>
+    <string name="favorites">Favorites</string>
+    <string name="view_on_map">View on Map</string>
+    <string name="my_orders">My Orders</string>
+    <string name="order_date">Ordered on</string>
+    <string name="delivery_on">Delivery on</string>
+    <string name="delivered_on">Delivered on</string>
+    <string name="ready_on">Ready on</string>
+    <string name="last_updated">Updated on</string>
+    <string name="products">Products</string>
+    <string name="descp">Specify  your  requirements  and  enquiries  here</string>
+    <string name="title">Specify your enquiries and requirements in below section.</string>
+    <string name="loading">Loading…</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="Write_an_enquiry">Write your enquiry</string>
+    <string name="enquiry_sub">Your enquiry has been successfully submitted.</string>
+    <string name="enquiry_fail">Your enquiry submission failed.</string>
+    <string name="contact_you">Our team will contact you soon.</string>
+    <string name="try_again">Please try again</string>
+    <string name="submit">Submit</string>
+    <string name="delete_review_q">Do you want to delete this review?</string>
+    <string name="my_orders_sidebar">≡\tMy Orders</string>
+    <string name="trending">⏫\tPopular</string>
+    <string name="trending_products">Popular Products</string>
+    <string name="new_message">"You have a new message"</string>
+    <string name="msg_notification">You have new messages</string>
+    <string name="splash_title">Santhi Plastic</string>
+    <string name="splash_tagline">- Uncompromised Quality -</string>
+    <string name="your_loyalty_card_number_is">Your loyalty card number is</string>
+    <string name="out_of_Stock">Out of Stock</string>
+    <string name="in_stock">In Stock</string>
+    <string name="view_your_order_status">View your order status</string>
+    <string name="search_results">Search Results</string>
+    <string name="view_all">View all</string>
+    <string name="total_amout">Total Amout ₹ %1$s</string>
+    <string name="checkout">Checkout</string>
+    <string name="product_name">Product Name: %1$s</string>
+    <string name="p_name">Name: %1$s</string>
+    <string name="p_number">Prodcut No: %1$s</string>
+    <string name="enter_quantity">Quantity</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="enquiry">PLACE ENQUIRY</string>
+    <string name="no_items_in_cart">There are currently no items in the cart</string>
+    <string name="added_to_cart">%1$s is added to cart</string>
+    <string name="already_added_to_cart">%1$s had already added to cart.</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="view_product">View product</string>
+    <string name="cancel_item_q">Do you want to remove this item from cart?</string>
+    <string name="placed_order">Your order placed successfully. Order number is %1$s</string>
+    <string name="no_chat">Start chatting</string>
+    <string name="boutique_details">☎\tCompany Details</string>
+    <string name="quantity">Quantity: </string>
+    <string name="quantity_value">Quantity: %1$s</string>
+    <string name="no_types_selected">No type selected. Item is not added to cart.</string>
+    <string name="address">Address</string>
+    <string name="request_delivery_date_label">Request Delivery Date</string>
+    <string name="request_delivery_time_label">Request Delivery Time</string>
+    <string name="requested_delivery_on">Requested delivery on</string>
+    <string name="branch">Branch Name</string>
+    <string name="could_not_connect_to_server">Check your internet connection and try again. We couldn\'t connect to the server.</string>
+    <string name="retry">Retry</string>
+</resources>

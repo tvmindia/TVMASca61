@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tech.thrithvam.bakeryapp.EnquiryItem"
+    android:background="@drawable/bg"
+    android:animateLayoutChanges="true">
+
+    <!--<com.daimajia.slider.library.SliderLayout-->
+        <!--android:id="@+id/itemImages"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_alignLeft="@+id/reviewInput"-->
+        <!--android:layout_alignStart="@+id/reviewInput"-->
+        <!--android:background="@drawable/back"-->
+        <!--android:layout_alignTop="@+id/offer" />-->
+
+
+    <ImageView
+        android:id="@+id/offer"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_above="@+id/textView22"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/reviewInput"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_above="@+id/submitReview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/boarder"
+        android:ems="10"
+        android:hint="@string/Write_an_enquiry"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:padding="5dp" />
+
+
+    <Button
+        android:id="@+id/submitReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/newbutton"
+        android:onClick="insertReview"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:text="submit"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView21"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/itemImages"-->
+    <!--android:layout_alignLeft="@+id/textView19"-->
+    <!--android:layout_alignStart="@+id/textView19"-->
+
+    <!--android:layout_marginBottom="32dp"-->
+    <!--android:text="TextView" />-->
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reviewInput"
+        android:layout_alignLeft="@+id/reviewInput"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignStart="@+id/reviewInput"
+        android:textColor="@color/background"
+        android:layout_marginBottom="12dp"
+        android:text="@string/descp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="@color/background"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/offer"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/offer"
+        android:layout_toRightOf="@+id/offer"
+        android:maxLength="17"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="TextView"
+        android:textColor="@color/background"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:maxLength="80"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:textColor="@color/background"
+        android:textSize="17sp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ബേക്കറി ആപ്പ്</string>
+    <string name="add_fav_msg">പ്രിയപ്പെട്ടവയിലേക്ക് കൂട്ടിച്ചേര്‍ത്തു </string>
+    <string name="remove_fav_msg">പ്രിയപ്പെട്ടവയില്‍ നിന്ന് കളഞ്ഞു </string>
+    <string name="favorite_count">☆ %1$dപേര്‍ക്ക് ഇത് പ്രിയപ്പെട്ടതാണ് ☆</string>
+    <string name="share_image">ചിത്രം കൈമാറുക </string>
+    <string name="similar_products">%1$s ലെ സമാന ഇനങ്ങള്‍ </string>
+    <string name="related_products">നിങ്ങളെ പൂര്‍ണമാക്കാന്‍ </string>
+</resources>

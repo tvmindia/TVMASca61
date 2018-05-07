@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/user"
+        android:icon="@drawable/user"
+        android:title="User"
+        yourapp:showAsAction="ifRoom"/>
+    <!--<item android:id="@+id/cart"-->
+    <!--yourapp:actionLayout="@layout/action_bar_cart_icon"-->
+    <!--yourapp:showAsAction="always"-->
+    <!--android:icon="@drawable/cart"-->
+    <!--android:title="Cart" />-->
+    <!--<item-->
+        <!--android:id="@+id/sidebar"-->
+        <!--android:icon="@drawable/sidebar"-->
+        <!--android:title="Categories"-->
+        <!--yourapp:showAsAction="always" />-->
+
+</menu>

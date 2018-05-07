@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tech.thrithvam.bakeryapp.Home"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/backimg"
+    android:id="@+id/drawerLayout">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeScroll">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newArrivalCard"
+        android:background="@color/whiteBackground"
+        android:orientation="vertical"
+        >
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/newArrivals"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            />
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:queryHint="Search"
+            android:background="@drawable/bg_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:maxWidth="10000dp"
+            />
+
+    </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="2dp"
+                android:id="@+id/homeScreen"/>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/itemsLoading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:indicator="BallPulse"
+                app:indicator_color="@android:color/white"
+                />
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/tiquesinnlabel"
+                android:src="@drawable/tiquesinnlabel"
+                android:scaleType="centerInside"
+                android:background="@color/primary"
+                android:visibility="invisible"
+                android:onClick="tiquesinnsite"/>
+        </LinearLayout>
+</com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:id="@+id/rightDrawer">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/catItemsLoading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            app:indicator="BallTrianglePath"
+            app:indicator_color="@color/primary_text"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <ListView
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:divider="@color/divider"
+            android:dividerHeight="0.5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"
+            android:layout_below="@id/drawer"
+            />
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

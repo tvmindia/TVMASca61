@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="itemLeft1"
+                android:id="@+id/itemLeft1"
+                android:textColor="@color/primary_text" />
+            <TextView
+                android:paddingLeft="7dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="itemRight1"
+                android:id="@+id/itemRight1"
+                android:textColor="@color/secondary_text"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="itemLeft"
+                android:id="@+id/itemLeft"
+                android:textColor="@color/primary_text" />
+            <TextView
+                android:paddingLeft="7dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="itemMiddle"
+                android:id="@+id/itemMiddle"
+                android:textColor="@color/secondary_text" />
+            <TextView
+                android:paddingLeft="7dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="itemRight"
+                android:id="@+id/itemRight"
+                android:textColor="@color/secondary_text"
+                android:gravity="right" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
