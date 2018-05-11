@@ -291,38 +291,12 @@ public class User extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        try {
-             switch (getIntent().getExtras().getString("from")){
-                case "home":
-                    Intent intent = new Intent(this, Home.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(intent);
-                    finish();
-                    overridePendingTransition(R.anim.slide_exit1,R.anim.slide_exit2);
-                    break;
-                case "enquiryItem":
-                      finish();
-//                    Intent intentgrid = new Intent(this, EnquiryItem.class);
-//                    intentgrid.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-//                    startActivity(intentgrid);
-//                    finish();
-//                    overridePendingTransition(R.anim.slide_exit1,R.anim.slide_exit2);
-                    break;
-        }
+        Intent intentHome = new Intent(this, Home.class);
+        intentHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intentHome);
+        finish();
+        overridePendingTransition(R.anim.slide_exit1,R.anim.slide_exit2);
 
-//        Intent intentHome = new Intent(this, Home.class);
-//        intentHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-//        startActivity(intentHome);
-//        finish();
-//        overridePendingTransition(R.anim.slide_exit1,R.anim.slide_exit2);
-    }catch (Exception e){
-            Intent intentHome = new Intent(this, Home.class);
-            intentHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intentHome);
-            finish();
-            overridePendingTransition(R.anim.slide_exit1,R.anim.slide_exit2);
-
-        }
     }
     public void sign_up(View view){
         mobileNoSignUp.setText(mobileLogin.getText().toString()); //getting mobile number from login page if user already entered
