@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.tech.thrithvam.bakeryapp.Checkout"
+    tools:context="com.tech.thrithvam.santhidigicatalogue.Checkout"
     android:background="@drawable/bg"
     android:animateLayoutChanges="true">
     <ScrollView

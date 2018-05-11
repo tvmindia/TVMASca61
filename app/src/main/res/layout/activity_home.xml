@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.tech.thrithvam.bakeryapp.Home"
+    tools:context="com.tech.thrithvam.santhidigicatalogue.Home"
     android:animateLayoutChanges="true"
     android:background="@drawable/backimg"
     android:id="@+id/drawerLayout">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tech.thrithvam.bakeryapp">
+    package="com.tech.thrithvam.santhidigicatalogue">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,14 +15,14 @@
 
 
     <application
-        android:name=".MyApplication"
+        android:name="com.tech.thrithvam.santhidigicatalogue.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashScreen"
+            android:name="com.tech.thrithvam.santhidigicatalogue.SplashScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -33,66 +33,67 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home"
+            android:name="com.tech.thrithvam.santhidigicatalogue.Home"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".User"
+            android:name="com.tech.thrithvam.santhidigicatalogue.User"
             android:configChanges="orientation|screenSize"
+            android:noHistory="true"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".ItemDetails"
+            android:name="com.tech.thrithvam.santhidigicatalogue.ItemDetails"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".ImageViewer"
+            android:name="com.tech.thrithvam.santhidigicatalogue.ImageViewer"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".BoutiqueDetails"
+            android:name="com.tech.thrithvam.santhidigicatalogue.BoutiqueDetails"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".OwnerAndDesigner"
+            android:name="com.tech.thrithvam.santhidigicatalogue.OwnerAndDesigner"
             android:configChanges="orientation|screenSize" />
 
         <service
-            android:name=".Services"
+            android:name="com.tech.thrithvam.santhidigicatalogue.Services"
             android:enabled="true"
             android:exported="true" />
 
         <activity
-            android:name=".GridOfProducts"
+            android:name="com.tech.thrithvam.santhidigicatalogue.GridOfProducts"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".OrderStatus"
+            android:name="com.tech.thrithvam.santhidigicatalogue.OrderStatus"
             android:configChanges="orientation|screenSize"
             android:label="My Orders " />
         <activity
-            android:name=".OrderProductList"
+            android:name="com.tech.thrithvam.santhidigicatalogue.OrderProductList"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".ProductReviews"
+            android:name="com.tech.thrithvam.santhidigicatalogue.ProductReviews"
             android:configChanges="orientation|screenSize"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".Chat"
+            android:name="com.tech.thrithvam.santhidigicatalogue.Chat"
             android:configChanges="orientation|screenSize"
             android:label="Chat with us" />
         <activity
-            android:name=".Cart"
+            android:name="com.tech.thrithvam.santhidigicatalogue.Cart"
             android:configChanges="orientation|screenSize"
             android:label="Your Cart" />
         <activity
-            android:name=".Checkout"
+            android:name="com.tech.thrithvam.santhidigicatalogue.Checkout"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".NetworkError"
+        <activity android:name="com.tech.thrithvam.santhidigicatalogue.NetworkError"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ItemDetailsWithCartBuy"
+        <activity android:name="com.tech.thrithvam.santhidigicatalogue.ItemDetailsWithCartBuy"
             android:configChanges="orientation|screenSize"/>
-        <activity android:name=".EnquiryItem"
+        <activity android:name="com.tech.thrithvam.santhidigicatalogue.EnquiryItem"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"/>
-        <activity android:name=".EnquiryConfirm"
+        <activity android:name="com.tech.thrithvam.santhidigicatalogue.EnquiryConfirm"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"/>
-        <activity android:name=".EnquiryFailed"
+        <activity android:name="com.tech.thrithvam.santhidigicatalogue.EnquiryFailed"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"/>
 
