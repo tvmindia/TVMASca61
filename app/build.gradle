@@ -5,7 +5,7 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.tech.thrithvam.bakeryapp"
+        applicationId "com.tech.thrithvam.santhidigicatalogue"
         minSdkVersion 13
         targetSdkVersion 25
         versionCode 1
