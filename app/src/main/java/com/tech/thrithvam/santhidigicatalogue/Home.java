@@ -137,7 +137,7 @@ public class Home extends AppCompatActivity implements ObservableScrollViewCallb
 
     }
     public void tiquesinnsite(View view){
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.tiquesinn.com/"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.thrithvam.com/"));
         startActivity(browserIntent);
         overridePendingTransition(R.anim.slide_entry1,R.anim.slide_entry2);
     }

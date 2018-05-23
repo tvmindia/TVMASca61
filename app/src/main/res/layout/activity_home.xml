@@ -17,46 +17,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/homeScroll">
+
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/newArrivalCard"
-        android:background="@color/whiteBackground"
-        android:orientation="vertical"
-        >
-        <com.daimajia.slider.library.SliderLayout
-            android:id="@+id/newArrivals"
-            android:layout_width="match_parent"
-            android:layout_height="190dp"
-            />
+            <RelativeLayout
+                android:id="@+id/newArrivalCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteBackground"
+                android:orientation="vertical">
 
-        <android.support.v7.widget.SearchView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/searchView"
-            android:queryHint="Search"
-            android:background="@drawable/bg_black"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:maxWidth="10000dp"
-            />
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/newArrivals"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp" />
 
-    </RelativeLayout>
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/bg_black"
+                    android:maxWidth="10000dp"
+                    android:queryHint="Search" />
+
+            </RelativeLayout>
+
             <LinearLayout
+                android:id="@+id/homeScreen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingTop="2dp"
-                android:id="@+id/homeScreen"/>
+                android:paddingTop="0dp" />
+
             <com.wang.avi.AVLoadingIndicatorView
                 android:id="@+id/itemsLoading"
                 android:layout_width="match_parent"
@@ -65,21 +65,20 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 app:indicator="BallPulse"
-                app:indicator_color="@android:color/white"
-                />
+                app:indicator_color="@android:color/white" />
 
             <ImageView
-                android:layout_marginTop="5dp"
+                android:id="@+id/tiquesinnlabel"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:id="@+id/tiquesinnlabel"
-                android:src="@drawable/tiquesinnlabel"
-                android:scaleType="centerInside"
+                android:layout_marginTop="5dp"
                 android:background="@color/primary"
-                android:visibility="invisible"
-                android:onClick="tiquesinnsite"/>
+                android:onClick="tiquesinnsite"
+                android:scaleType="centerInside"
+                android:src="@drawable/tiquesinnlabel"
+                android:visibility="invisible" />
         </LinearLayout>
-</com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
     </FrameLayout>
     <RelativeLayout
         android:layout_width="280dp"

@@ -876,7 +876,7 @@ public class User extends AppCompatActivity {
     }
 
     public void UserVerification(){
-        Toast.makeText(User.this,Integer.toString(OTP),Toast.LENGTH_LONG).show();
+//        Toast.makeText(User.this,Integer.toString(OTP),Toast.LENGTH_LONG).show();
         AlertDialog.Builder alert = new AlertDialog.Builder(User.this);
         alert.setTitle(R.string.enter_otp);
         final EditText otp=new EditText(User.this);

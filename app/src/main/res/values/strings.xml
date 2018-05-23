@@ -26,9 +26,9 @@
     <string name="wait">Please wait</string>
     <string name="submiten">ENQUIRY SENDED TO COMPANY</string>
     <!--<string name="url" translatable="false">http://tiquesinn.com/</string>-->
-    <!--<string name="url" translatable="false">http://192.168.1.111:7172/</string>-->
+    <string name="url" translatable="false">http://192.168.1.111:7172/</string>
     <!--<string name="url" translatable="false">http://localhost:16801/</string>-->
-    <string name="url" translatable="false">http://jdadmin-001-site2.itempurl.com/</string>
+    <!--<string name="url" translatable="false">http://jdadmin-001-site2.itempurl.com/</string>-->
 
 
     <!--<string name="url" translatable="false">http://jdadmin-001-site2.itempurl.com/</string>-->
