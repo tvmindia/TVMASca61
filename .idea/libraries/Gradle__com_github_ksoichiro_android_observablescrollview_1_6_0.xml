@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ksoichiro:android-observablescrollview-1.6.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/bb947d90d1e033c2cd2acf7defbd77b9a322192a/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/bb947d90d1e033c2cd2acf7defbd77b9a322192a/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
