@@ -89,7 +89,8 @@ public class EnquiryItem extends AppCompatActivity {
         db=DatabaseHandler.getInstance(this);
         extras = getIntent().getExtras();
         TextView text= (TextView) findViewById(R.id.textView17);
-        text.setText(getResources().getString(R.string.p_name,(extras.getString("productName"))));
+        text.setText(extras.getString("productName"));
+//        text.setText(getResources().getString(R.string.p_name,(extras.getString("productName"))));
         text.setTypeface(fontType1);
 
         TextView instruction=(TextView)findViewById(R.id.textView22);

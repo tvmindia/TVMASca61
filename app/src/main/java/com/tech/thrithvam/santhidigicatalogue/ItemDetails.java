@@ -1047,6 +1047,7 @@ public class ItemDetails extends AppCompatActivity {
                             Intent intent=new Intent(ItemDetails.this,ImageViewer.class);
                             intent.putExtra("Imageurl",imgurls.get(fi));
                             intent.putExtra("ProductName",productName);
+                            intent.putExtra("Description",descriptionString);
                             startActivity(intent);
                             overridePendingTransition(R.anim.slide_entry1,R.anim.slide_entry2);
                         }
@@ -1090,13 +1091,14 @@ public class ItemDetails extends AppCompatActivity {
                                     .into(ivImage, new com.squareup.picasso.Callback() {
                                         @Override
                                         public void onSuccess() {
-                                            Uri bmpUri = getLocalBitmapUri(ivImage,productName+"@"+constants.BoutiqueName);
+                                            Uri bmpUri = getLocalBitmapUri(ivImage,productName  ,descriptionString+"@"+constants.BoutiqueName);
                                             if (bmpUri != null) {
                                                 Intent shareIntent = new Intent();
                                                 shareIntent.setAction(Intent.ACTION_SEND);
                                                 shareIntent.putExtra(Intent.EXTRA_STREAM, bmpUri);
                                                 shareIntent.setType("image/*");
-                                                shareIntent.putExtra(Intent.EXTRA_TEXT, productName+"\t@\t"+constants.BoutiqueName);
+                                                shareIntent.putExtra(Intent.EXTRA_TEXT,productName+"\n"+"\n"+descriptionString+"\n"+"\n"+constants.BName+"\n"+"\n"+constants.Plink);
+//                                                shareIntent.putExtra(Intent.EXTRA_TEXT,descriptionString+"\t@\t"+constants.BoutiqueName);
                                                 startActivity(Intent.createChooser(shareIntent, "Share Image"));
                                             }
                                         }
@@ -1322,7 +1324,7 @@ public class ItemDetails extends AppCompatActivity {
         return netInfo != null && netInfo.isConnectedOrConnecting();
     }
     // Returns the URI path to the Bitmap displayed in specified ImageView
-    public Uri getLocalBitmapUri(ImageView imageView,String fileName) {
+    public Uri getLocalBitmapUri(ImageView imageView, String productName, String fileName) {
         // Extract Bitmap from ImageView drawable
         Drawable drawable = imageView.getDrawable();
         Bitmap bmp;

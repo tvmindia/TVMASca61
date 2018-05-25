@@ -8,6 +8,8 @@ public class Constants {
 //    String BoutiqueID= "cc08cd6d-1026-4463-8bec-5730bfc5a12c";//SanthiPlastic
     String BoutiqueID= "5357a4d7-899f-4486-bca9-f6f296c17e64";//SanthiPlastic
     String BoutiqueName="Santhi plastics";
+    String BName="Santhi plastics,VR Puram,Chalakkudy,Thrissur Dist,Kerala State,India, ph:0480 270 9088";
+    String Plink="Download santhi Digi catalogue at http://bit.ly/SanthiCatalogue";
     int MobileNumberMax=10;
     int MobileNumberMin=10;
     String MobileNumberRegularExpression = "^[0-9]*$";

@@ -9,24 +9,23 @@
     android:animateLayoutChanges="true">
 
     <!--<com.daimajia.slider.library.SliderLayout-->
-        <!--android:id="@+id/itemImages"-->
-        <!--android:layout_width="150dp"-->
-        <!--android:layout_height="150dp"-->
-        <!--android:layout_alignLeft="@+id/reviewInput"-->
-        <!--android:layout_alignStart="@+id/reviewInput"-->
-        <!--android:background="@drawable/back"-->
-        <!--android:layout_alignTop="@+id/offer" />-->
+    <!--android:id="@+id/itemImages"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_alignLeft="@+id/reviewInput"-->
+    <!--android:layout_alignStart="@+id/reviewInput"-->
+    <!--android:background="@drawable/back"-->
+    <!--android:layout_alignTop="@+id/offer" />-->
 
 
     <ImageView
         android:id="@+id/offer"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_above="@+id/textView22"
         android:layout_alignLeft="@+id/textView22"
+        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/textView22"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
         android:background="@drawable/back"
         android:scaleType="centerCrop" />
 
@@ -91,25 +90,27 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_alignLeft="@+id/textView18"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/textView18"
+        android:gravity="center"
         android:text="TextView"
         android:textColor="@color/background"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/offer"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
+        android:layout_below="@+id/textView17"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="18dp"
         android:layout_toEndOf="@+id/offer"
         android:layout_toRightOf="@+id/offer"
+        android:ellipsize="end"
         android:maxLength="17"
         android:maxLines="1"
-        android:ellipsize="end"
         android:text="TextView"
         android:textColor="@color/background"
         android:textSize="20sp" />
@@ -121,13 +122,13 @@
         android:layout_alignLeft="@+id/textView18"
         android:layout_alignStart="@+id/textView18"
         android:layout_below="@+id/textView18"
-        android:layout_marginTop="36dp"
-        android:text="TextView"
-        android:maxLength="80"
-        android:maxLines="4"
+        android:layout_marginTop="18dp"
         android:ellipsize="end"
+        android:maxLength="200"
+        android:maxLines="5"
+        android:text="TextView"
         android:textColor="@color/background"
-        android:textSize="17sp"/>
+        android:textSize="20sp" />
 
 
 
