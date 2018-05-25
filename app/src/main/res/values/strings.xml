@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Santhi Plastics</string>
+    <string name="app_name">SP Catalogue</string>
     <string name="add_fav_msg">Added to favorites…</string>
     <string name="remove_fav_msg">Removed from favorites…</string>
     <string name="favorite_count">☆ %1$d people favorites it ☆</string>
